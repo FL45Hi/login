@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ragister | Create Your Account </title>
+    <link rel="icon" href="./img/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+        * {
+        box-sizing: border-box
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto',sans-serif,'Courier New', Courier, monospace;
+            background: url('img/4.jpg') no-repeat;
+            height: 100%;
+            /*background-size: cover;*/
+        }
+        #container{
+
+            background-color: #fff;
+            width: 850px;
+            height: 520px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 1px 1px 50px rgba(0,0,0,0,0.2);
+            border-radius: 10px;
+
+        }
+        #container::before {
+            content: '';
+            width: 350px;
+            height: 520px;
+            background-color: skyblue;
+            position:absolute;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background: url('img/5.jpg') no-repeat;
+            /*background-size: 100%;*/
+        }
+        .icon h2{
+            position: absolute;
+            top: 20%;
+            left: 12%;
+            transform: translate(-50%,-50%);
+            font-family: sans-serif;
+            color: black;
+        }
+        .icon h1{
+            position: absolute;
+            top: 28%;
+            left: 15%;
+            transform: translate(-50%,-50%);
+            font-family: sans-serif;
+            color: grey;
+        }
+        .icon p{
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%,-50%);
+            font-family: sans-serif;
+            color: grey;
+        }
+        .social{
+            position: absolute;
+            top: 70%;
+            left: 20%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+        }
+        .fa {
+            padding: 5px;
+            font-size: 20px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 5px;
+        }
+        .fa:hover {
+            opacity: 0.8;
+            transform: scale(1.2);
+        }
+
+        .fa-facebook {
+        background: #3B5998;
+        color: white;
+        }
+
+        .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        }
+
+        .fa-google {
+        background: #dd4b39;
+        color: white;
+        }
+        .fa-pinterest {
+            background: #cb2027;
+        color: white;
+        }
+
+        .forms{
+            position: absolute;
+            top: 48%;
+            left: 70%;
+            transform: translate(-50%,-50%);
+            width: 440px;
+            overflow: hidden;
+        }
+        .forms input{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 0 0 0 35px;
+            border: 1px solid rgba(0,0, 0,0);
+            border-bottom-color: skyblue;
+            background: transparent;
+            border-radius: 5px;
+        }
+        .forms input:focus{
+            background-color: #f5f5f5;
+            border: 1px solid skyblue;
+        }
+
+        .forms .fa-envelope,
+        .forms .fa-user,
+        .forms .fa-phone,
+        .forms .fa-key,
+        .forms .fa-lock
+        {
+            width: 25px;
+            position: absolute;
+            margin-top: 10px;
+        }
+        .forms .fa-adjust{
+            width: 25px;
+            position: absolute;
+        }
+
+        .forms .si{
+            padding: 0 5px;
+            
+        }
+        .forms input[type="checkbox"]{
+            width: 20px;
+            margin: 16px 0 0 2px;
+            padding: 0;
+            border: 2px solid #5bb9ec;
+            width: 15px;
+            height: 14px;
+            -webkit-appearance: none;
+            background-color: #fff;
+            outline: none;
+        }
+        input:checked[type="checkbox"]{
+            background-color: #fb007d;
+            border: none;
+        }
+        
+        .agree{
+            float: right;
+            margin-right: 150px;
+            font-size: 15px;
+        }
+        .forms input[type="submit"]{
+            width: 45%;
+            border: none;
+            background-color: skyblue;
+            color: #fff;
+            cursor: pointer;
+            padding: 0;
+            margin-left: 10px;
+        }
+        .forms input[type="submit"]:hover{
+            background-color: #fb007d;
+            opacity: 0.5;
+            border-radius: 10px;
+            transform: scale(1.1);
+        }
+		.forms input[type="clear"]{
+            width: 45%;
+            border: none;
+            background-color: skyblue;
+            color: #fff;
+            cursor: pointer;
+            padding: 0;
+            margin-left: 10px;
+			text-align: center;
+        }
+        .forms input[type="clear"]:hover{
+            background-color: #fb007d;
+            opacity: 0.5;
+            border-radius: 10px;
+            transform: scale(1.1);
+        }
+
+        .forms .radio-inline{
+            padding: 0 5px;
+
+        }
+        .forms input[type="radio"]{
+            width: 20px;
+            margin: 12px 0 0 2px;
+            padding: 5px;
+            border: 2px solid #5bb9ec;
+            width: 15px;
+            height: 14px;
+            -webkit-appearance: none;
+            background-color: #fff;
+            outline: none;
+        }
+        input:checked[type="radio"]{
+            background-color: #fb007d;
+            border: none;
+        }
+
+        @media screen and (max-width: 300px) {
+
+        .forms input[type="submit"],
+        .forms input[type="clear"] {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="icon">
+            <h2>Let's Get</h2>
+            <h1>Started</h1>
+            <p><strong style="color: #222222;">Sign Up</strong> With existing Social profile </p>
+        </div>
+        <div class="social">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-pinterest"></i>
+        </div>
+
+        <form action="index.html">
+        <div class="forms">
+            <h1>Register</h1>
+            <div class="textBox" style="display: flex;">
+                <div class="si">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" name="Username" required="" placeholder="First Name">
+                </div>
+                <div class="si">
+                    <input type="text" name="Username" required="" placeholder="Middle Name">
+                </div>
+                <div class="si">
+                    <input type="text" name="Username" required="" placeholder="Last Name">
+                </div>
+        
+
+            </div>
+           
+            <div class="textBox">
+                <i class="fa fa-envelope icon"></i>
+                <input type="text" name="Email" required="" placeholder="Enter Email ID">
+            
+            </div>
+
+            <div class="textBox">
+                <i class="fa fa-phone icon"></i>
+                <input type="text" name="Phone" required="" placeholder="Phone Number">
+                
+                <p style="font-size: 12px;font-weight: 200;color: gray;">Note : Please Give a Valid Phone Number to verify your account.</p>
+            </div>
+
+            <div class="textBox" style="display: flex;">
+                <i class="fa fa-adjust icon"></i>
+                <label class="radio-inline" for="optradio">&emsp;&emsp; Gender &emsp;&emsp;
+                <label class="radio-inline"><input type="radio" name="optradio" checked> male</label>
+                <label class="radio-inline"><input type="radio" name="optradio"> female</label>
+                </label>
+    
+            </div>
+
+
+            <div class="textBox">
+                <i class="fa fa-user icon"></i>
+                <input type="text" name="Username" required="" placeholder="Username">
+            
+            </div>
+
+            <div class="textBox" style="display: flex;">
+                <div class="si">
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" name="Password" required="" placeholder="Password">     
+                </div>
+                <div class="si">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" name="Password" required="" placeholder="Confirm Password">
+                </div>
+            </div>
+        
+            <input type="checkbox" style="margin-left: 20px"> <p class="agree">I agree Terms And Conditions </p>
+            <input type="submit" Value="Signup"><a href="index.html"></a></input>
+            <input type="clear" Value="Cancel">
+        </div>
+        </form>
+
+    </div>
+</body>
+</html>

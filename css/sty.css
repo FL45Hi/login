@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif,'Courier New', Courier, monospace;
+    background: url('img/5,jpg') center no-repeat;
+    height: 500px;
+    /* background-size: cover; */
+}
+
+
+header{
+	background: skyblue;
+    color: #fff;
+    padding: 0 60px;
+	padding-top: 10px;
+	min-height: 65px;
+    border-bottom: #e8491d 3px solid;
+    
+}
+
+header a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-decoration: none;
+    
+}
+header a:hover{
+	color: coral;
+	font-weight: bold;
+}
+
+header li{
+	display: inline;
+	padding: 0 18px 0 18px;
+}
+header #brand{
+	float: left;
+    
+}
+header #brand h1{
+	margin: 0;
+	margin-top: 15px;
+	padding-left: 10px;
+
+
+}
+header #brand img{
+	margin: 0;
+	margin-top: 13px;
+    border-radius: 45%;
+}
+header nav{
+	float: right;
+	margin-top:15px;
+}
+header .highlight, header .current a{
+	color: #604f4f;
+	font-weight: bold;
+    font-family: 'Sacramento', cursive;
+
+}
+
+.search-box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #262626;
+    height: 30px;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.search-box:hover > .search-text{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background: white;
+}
+
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.9s;
+
+}
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 1rem;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 0px;
+}
+
+#showcase{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    width: 1300px;
+    height: 500px;
+    /* padding: 50px; */
+    background-color: rgba(130, 196, 207, 0.6);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    color: lightgray;
+    margin-bottom: 100px;
+}
+
+
