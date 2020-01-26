@@ -128,4 +128,19 @@ header .highlight, header .current a{
     margin-bottom: 100px;
 }
 
+button{
+        border: 3px solid grey;   
+        padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: -20px;
+            outline: none;
+            overflow: hidden;
+}
+button:hover{
+    color: white;
+    background-color: grey;
+    transform: scale(1.1);
+    opacity: 1;
 
+}
